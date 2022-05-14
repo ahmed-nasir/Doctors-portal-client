@@ -1,5 +1,6 @@
 import React from 'react';
 import appointment from '../../assets/images/appointment.png'
+import PrimaryButton from '../Shared/PrimaryButton';
 
 const ContactUs = () => {
     return (
@@ -9,9 +10,10 @@ const ContactUs = () => {
                 <p className='text-3xl text-white'>Stay connected with us</p>
             </div>
             <div className='grid grid-cols-1 justify-items-center gap-2 '>
-                <input type="text" placeholder="Type here" class="input w-full max-w-xs" />
-                <input type="text" placeholder="Type here" class="input w-full max-w-xs" />
-                <textarea class="textarea textarea-bordered w-full max-w-xs" placeholder="Bio"></textarea>
+                <input type="text" placeholder="Type here" className="input w-full max-w-xs" />
+                <input type="text" placeholder="Type here" className="input w-full max-w-xs" />
+                <textarea className="textarea textarea-bordered w-full max-w-xs" placeholder="Bio"></textarea>
+                <PrimaryButton>Submit</PrimaryButton>
             </div>
         </div>
     );
