@@ -17,7 +17,7 @@ const Navbar = () => {
             <li>{
                 user
                     ?
-                    <button onClick={()=>signOut(auth)} class="btn btn-ghost">Sign Out</button>
+                    <button onClick={()=>signOut(auth)} className="btn btn-ghost">Sign Out</button>
                     :
                     <Link to='/login'>LogIn</Link>
             }</li>
